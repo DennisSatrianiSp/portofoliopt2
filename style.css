@@ -1,0 +1,55 @@
+.jumbotron {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #0c2461;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 0;
+}
+.about {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.portofolio {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #0c2461;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.blog {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+.contact {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #0c2461;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(0, 88, 221);
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.ketik {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: ketik 4s steps(50) 1s;
+  text-align: center;
+}
+@keyframes ketik {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 50ch;
+  }
+}

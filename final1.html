@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Tebak Warna</title>
+    <style>
+      body {
+        background-color: rgb(60, 60, 223);
+      }
+      .tampilan {
+        background-color: rgb(60, 60, 223);
+        padding: 0;
+        padding-top: 110px;
+        margin: 0;
+      }
+      .judul {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      .soal p {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      .kotak {
+        width: 250px;
+        height: 150px;
+        background-color: white;
+        border: 3px solid black;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .level {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .d-display {
+        display: inline !important;
+      }
+      .hijau {
+        background-color: green;
+      }
+      .kuning {
+        background-color: yellow;
+      }
+      .merah {
+        background-color: red;
+      }
+      .biru {
+        background-color: blue;
+      }
+      .hitam {
+        background-color: black;
+      }
+      .hint {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tampilan">
+      <div class="judul">
+        <h1>Aplikasi Penghasil Warna</h1>
+      </div>
+      <div class="soal">
+        <div class="kotak" id="kotak"></div>
+        <p id="tulisan">Ini Warna apa?</p>
+      </div>
+      <div class="level">
+        <button onclick="warna1()">Level 1</button>
+        <button onclick="warna2()">Level 2</button>
+        <button onclick="warna3()">Level 3</button>
+        <button onclick="warna4()">Level 4</button>
+        <button onclick="warna5()">Level 5</button>
+      </div>
+      <div class="hint">
+        <p>Klik satu 2x per warna!</p>
+      </div>
+      <div class="jawaban"></div>
+    </div>
+    <script>
+      function warna1() {
+        const kotak1 = document.getElementById('kotak');
+        const tulisan1 = document.getElementById('tulisan');
+        kotak1.classList.toggle('hijau');
+        tulisan1.innerHTML = 'Hijau';
+      }
+      function warna2() {
+        const kotak1 = document.getElementById('kotak');
+        const tulisan1 = document.getElementById('tulisan');
+        kotak1.classList.toggle('merah');
+        tulisan1.innerHTML = 'Merah';
+      }
+      function warna3() {
+        const kotak1 = document.getElementById('kotak');
+        const tulisan1 = document.getElementById('tulisan');
+        kotak1.classList.toggle('biru');
+        tulisan1.innerHTML = 'Biru';
+      }
+      function warna4() {
+        const kotak1 = document.getElementById('kotak');
+        const tulisan1 = document.getElementById('tulisan');
+        kotak1.classList.toggle('hitam');
+        tulisan1.innerHTML = 'Hitam';
+      }
+      function warna5() {
+        const kotak1 = document.getElementById('kotak');
+        const tulisan1 = document.getElementById('tulisan');
+        kotak1.classList.toggle('kuning');
+        tulisan1.innerHTML = 'Kuning';
+      }
+    </script>
+  </body>
+</html>
